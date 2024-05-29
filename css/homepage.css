@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    
+}
+.header {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 80px;
+    width: 145px;
+    height: 100%;
+    background-color:rgb(34, 53, 78);
+    
+}
+.menu-top{
+    height:80px;
+    width: 100%;
+    text-align: center;
+ 
+}
+.logo{
+   width: 70px;
+   height: 70px;
+   cursor: pointer;
+   border-radius: 10px;
+   padding-top: 5px;
+   
+
+}
+.main-menu{
+    width: 145px;
+    height: 300px;
+    float: left;
+}
+.menu-button{
+    padding: 25px 0 0 10px;
+    font-size: 15px;
+    color: white;
+    opacity: 0.9;
+    text-decoration: none;
+    width: 135px;
+    height: 60px;
+    cursor: pointer;
+    display: block;
+
+}
+.menu-button:hover{
+    background-color: rgb(57, 74,97);
+    border-radius: 10px;
+    color: plum;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    margin-left: 145px;
+    flex-direction: column;
+    background-color: rgb(22, 42,69);
+}
+.content-search {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    margin-left: 145px;
+    background-color: rgb(22, 42,69);
+    display: flex;
+  
+
+}
+.content-main{
+    width: 100%;
+   margin: 80px 0 80px 0;
+    background-color:rgb(22, 42,69);
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(23, 47,79);
+    position: fixed;
+    display: flex; 
+}
+  .dieuhuong{
+    font-size: 30px;
+    float: left;
+    width:150px;
+    height: 79px;
+    letter-spacing: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+  }
+  .dieuhuong-button{
+    color: white;
+    opacity: 0.9;
+  }
+  .timkiem{
+    height: 79px;
+    flex: 1;
+    position:relative;
+    display: flex;
+    align-items: center;
+    
+  }
+  .button-tk{
+    font-size: 20px;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 160px;
+    padding-left: 10px;
+   
+  }
+  .button-timkiem{
+    font-size: 23px;
+    padding-left: 15px;
+    width: 5%;
+    padding-right: 90px;
+    color: white;
+    opacity: 0.9;
+  }
+ .login{
+    color: white;
+  padding: 20px;
+  text-decoration: none;
+  opacity: 0.9;
+
+ }
+ .login:hover{
+    color:plum;
+    cursor: pointer;
+ }
+.footer-left{
+    width: 350px;
+    height: 80px;
+    display: flex;
+}
+.anhms{
+    width: 60px;
+    height: 60px;
+    padding: 7px ;
+   
+}
+.left-nd{
+    width: 150px;
+    display: inline;
+    list-style: none;
+    padding: 8px;
+}
+.tenbh{
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.footer-center{
+   width: 975px;
+}
+.center-top{
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 350px;
+    display: flex;
+    align-items: center;
+}
+.shuffle{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.backward{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.play{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.forward{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.repeat{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.shuffle:hover{
+    color: plum;
+}
+.backward:hover{
+    color: plum;
+}
+.play:hover{
+    color: plum;
+}
+.forward:hover{
+    color: plum;
+}
+.repeat:hover{
+    color: plum;
+}
+
+
+.footer-right{
+    flex: 1;
+    display: flex;
+    padding-top: 27px;
+}
+.bt-right{
+    display: flex;
+    justify-content: center;
+    
+}
+.button-right{
+    font-size: 20px;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.vollum{
+    padding: 4px 0 0 7px;
+}
+
+.progress-container{
+    padding-left: 215px;
+}
+.progress {
+    width: 500px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    height: 8px;
+    background:white;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.progress:hover::-webkit-slider-thumb {
+    background: #5b36e1;
+    box-shadow: -500px 0 0 500px #5b36e1;
+}
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 12px;
+    height: 6px;
+    background: #5b36e1;
+    box-shadow: -500px 0 0 500px #5b36e1;
+}
+.duration{
+    color: white;
+}
+.remaining{
+    color: white;
+}
+
+/* css trang chu  */
+.slider{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.sli{
+   width: 30%;
+   height: 200px;
+   border-radius: 15px;
+   cursor: pointer;
+   transition:all 0.3s ease-in-out;
+}
+.sli:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+   
+}
+/* bxh */
+.tieudebxh{
+    display: flex;
+    list-style: none;
+    color: white;
+    padding: 30px ;
+    justify-content:space-between;
+    font-size: 20px;
+}
+.all{
+    color: white;
+}
+.nd-bxh{
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-around;
+    
+    
+}
+.bxh{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    
+
+}
+.bxh:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.ft-bxh{
+    justify-content: space-around;
+    display: flex;
+}
+.tenbxh{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;   
+}
+/* theloai */
+.tieudetheloai{
+    display: flex;
+    list-style: none;
+    color: white;
+    padding: 30px ;
+    justify-content:space-between;
+    font-size: 20px;
+}
+.all{
+    color: white;
+}
+.nd-theloai{
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-around;
+    
+    
+}
+.theloai{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    
+
+}
+.theloai:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.ft-theloai{
+    justify-content: space-around;
+    display: flex;
+    padding-left: 10px;
+}
+.tentheloai{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;   
+}
+/* nghe si */
+.tieudenghesi{
+    display: flex;
+    list-style: none;
+    color: white;
+    padding: 30px ;
+    justify-content:space-between;
+    font-size: 20px;
+}
+.all{
+    color: white;
+}
+.nd-nghesi{
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-around;
+    
+    
+}
+.nghesi{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+    
+
+}
+.nghesi:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.ft-nghesi{
+    justify-content: space-around;
+    display: flex;
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+.tennghesi{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    
+}
+.header {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 80px;
+    width: 145px;
+    height: 100%;
+    background-color:rgb(34, 53, 78);
+    
+}
+.menu-top{
+    height:80px;
+    width: 100%;
+    text-align: center;
+ 
+}
+.logo{
+   width: 70px;
+   height: 70px;
+   cursor: pointer;
+   border-radius: 10px;
+   padding-top: 5px;
+   
+
+}
+.main-menu{
+    width: 145px;
+    height: 300px;
+    float: left;
+}
+.menu-button{
+    padding: 25px 0 0 10px;
+    font-size: 15px;
+    color: white;
+    opacity: 0.9;
+    text-decoration: none;
+    width: 135px;
+    height: 60px;
+    cursor: pointer;
+    display: block;
+
+}
+.menu-button:hover{
+    background-color: rgb(57, 74,97);
+    border-radius: 10px;
+    color: plum;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    margin-left: 145px;
+    flex-direction: column;
+    background-color: rgb(22, 42,69);
+}
+.content-search {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    margin-left: 145px;
+    background-color: rgb(22, 42,69);
+    display: flex;
+  
+
+}
+.content-main {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: rgb(22, 42,69);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(23, 47,79);
+    position: fixed;
+    display: flex; 
+}
+  .dieuhuong{
+    font-size: 30px;
+    float: left;
+    width:150px;
+    height: 79px;
+    letter-spacing: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+  }
+  .dieuhuong-button{
+    color: white;
+    opacity: 0.9;
+  }
+  .timkiem{
+    height: 79px;
+    flex: 1;
+    position:relative;
+    display: flex;
+    align-items: center;
+    
+  }
+  .button-tk{
+    font-size: 20px;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 160px;
+    padding-left: 10px;
+   
+  }
+  .button-timkiem{
+    font-size: 23px;
+    padding-left: 15px;
+    width: 5%;
+    padding-right: 90px;
+    color: white;
+    opacity: 0.9;
+  }
+ .login{
+    color: white;
+  padding: 20px;
+  text-decoration: none;
+  opacity: 0.9;
+
+ }
+ .login:hover{
+    color:plum;
+    cursor: pointer;
+ }
+.footer-left{
+    width: 350px;
+    height: 80px;
+    display: flex;
+}
+.anhms{
+    width: 60px;
+    height: 60px;
+    padding: 7px ;
+   
+}
+.left-nd{
+    width: 150px;
+    display: inline;
+    list-style: none;
+    padding: 8px;
+}
+.tenbh{
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.footer-center{
+   width: 975px;
+}
+.center-top{
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 350px;
+    display: flex;
+    align-items: center;
+}
+.shuffle{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.backward{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.play{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.forward{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.repeat{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.shuffle:hover{
+    color: plum;
+}
+.backward:hover{
+    color: plum;
+}
+.play:hover{
+    color: plum;
+}
+.forward:hover{
+    color: plum;
+}
+.repeat:hover{
+    color: plum;
+}
+
+
+.footer-right{
+    flex: 1;
+    display: flex;
+    padding-top: 27px;
+}
+.bt-right{
+    display: flex;
+}
+.button-right{
+    font-size: 20px;
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+}
+.vollum{
+    padding: 4px 0 0 7px;
+}
+.progress-container{
+    padding-left: 215px;
+}
+.progress {
+    width: 500px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    height: 8px;
+    background:white;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.progress:hover::-webkit-slider-thumb {
+    background: #5b36e1;
+    box-shadow: -500px 0 0 500px #5b36e1;
+}
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 12px;
+    height: 6px;
+    background: #5b36e1;
+    box-shadow: -500px 0 0 500px #5b36e1;
+}
+.duration{
+    color: white;
+}
+.remaining{
+    color: white;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ::-webkit-scrollbar{
+      width: 2px;
+      height: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+      background-color: rgb(81, 79, 81);
+  }
+  .content-main {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: rgb(22, 42,69);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .playlist-nav {
+    width: 100%;
+    height: 40px;
+    border-color: black;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-top: 5px;
+    color: white;
+  }
+  
+  .playlist-create{
+    display: inline-flex;
+    /* position: relative; */
+    align-items: center;
+    margin-right: 70px;
+    margin-bottom: 5px;
+  }
+  .btn-create{
+    border: none;
+    background-color:rgb(22, 42,69,0.600);
+    color: white;
+  }
+  .btn-create:hover{
+    cursor: pointer;
+  }
+  .btn-create:focus ~ .modal{
+    display: flex;
+  }
+  .playlist-block {
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  
+  .playlist-like {
+    margin: 20px;
+    width: 480px;
+    height: 260px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, rgb(239, 5, 145), rgb(246, 143, 210));
+    order: 0;
+  }
+  
+  .playlist-like i{
+    padding:106px 216px 106px 216px;
+    font-size: 48px;
+  }
+  
+  .playlist {
+    margin: 20px 20px 20px 20px;
+    width: 220px;
+    height: 260px;
+    border-radius: 10px;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .playlist-img{
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  
+  }
+  .playlist-img-modal{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+  }
+  .playlist-img-modal a{
+    position: absolute;
+    padding: 98px;
+    font-size: 24px;
+    display: none;
+  }
+  .playlist-img-modal:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .playlist-img-modal:hover a{
+    display: block;
+  }
+  
+  .img{
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+  }
+  .tentheloai {
+  margin: auto;
+    color: white;
+  }
+  
+  
+  /*modal*/
+  .modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    display: none;
+  }
+  .modal-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+  }
+  .modal-body{
+    width: 350px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin: auto;
+    z-index: 100;
+    color: black;
+  }
+  .create-playlist{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-close{
+    width: 14px;
+    height: 14px;
+    margin-left: 95%;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .btn-close i{
+    display: flex;
+    justify-content:flex-end;
+  }
+  .create-playlist-header{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .create-playlist-input{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-color: rgb(200, 198, 198);
+    border-style: solid;
+  }
+  .create-playlist-input:focus{
+    border-color: #999;
+  }
+  .create-playlist-form{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .create-playlist-option{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .option-note{
+    margin: 5px;
+    line-height: 25px;
+  }
+  
+  .create-playlist-submit-btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: #2196F3;
+  }
+  
+  
+  /* thiết lập CSS cho switch */
+  .switch {
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+  }
+  /* Ẩn ô checkbox  */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* Thiết lập CSS cho slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(11px);
+    -ms-transform: translateX(11px);
+    transform: translateX(11px);
+  }
+  .slider.round {
+    border-radius: 17px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
